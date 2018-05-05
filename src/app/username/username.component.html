@@ -1,0 +1,15 @@
+<p class="panel-title">User Name Component</p>
+<hr>
+
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]= "userName"
+  (input)="onUpdateUserName($event)"
+>
+
+<p>Youre username is: {{userName}}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!isUserNameResatable"
+  (click)="onResetUserName()">Reset</button>
