@@ -7,13 +7,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class UserNameComponent {
   userName = '';
-  isUserNameResatable = false;
+  // commented out becouse there is an esyer way. See html file
+  // isUserNameResatable = false;
 
   onResetUserName() {
     this.userName = '';
   }
 
-  onUpdateUserName(event: Event) {
-    this.isUserNameResatable = (<HTMLInputElement>event.target).value !== '';
-  }
+  // onUpdateUserName(event: Event) {
+  //   this.isUserNameResatable = (<HTMLInputElement>event.target).value !== '';
+  // }
 }

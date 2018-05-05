@@ -4,12 +4,11 @@
 <input
   type="text"
   class="form-control"
-  [(ngModel)]= "userName"
-  (input)="onUpdateUserName($event)"
->
+  [(ngModel)]= "userName">
+  <!--(input)="onUpdateUserName($event)">-->
 
 <p>Youre username is: {{userName}}</p>
 <button
   class="btn btn-primary"
-  [disabled]="!isUserNameResatable"
+  [disabled]="userName === ''"
   (click)="onResetUserName()">Reset</button>
