@@ -10,9 +10,9 @@ export class UserNameComponent {
   // commented out becouse there is an esyer way. See html file
   // isUserNameResatable = false;
 
-  onResetUserName() {
-    this.userName = '';
-  }
+  // onResetUserName() {
+  //   this.userName = '';
+  // }
 
   // onUpdateUserName(event: Event) {
   //   this.isUserNameResatable = (<HTMLInputElement>event.target).value !== '';

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-default" (click)="isHidden=!isHidden; logToggle()">Display Details</button>
+      <p [hidden]="isHidden">Secret Password = tuna</p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <li class="list-group-item"
+            *ngFor="let entry of logList; let i=index"
+            [style.backgroundColor]="i>=4 ? 'blue': null"
+            [ngClass]="{'white_font':i>=4}"
+        >{{i+1}} - {{entry}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
